@@ -61,7 +61,7 @@ def index():
 
     img.save('cur_time.jpg')
 
-    return 'ok'
+    return text
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
