@@ -68,12 +68,12 @@ def index():
     from instauto.api.actions import post as ps
 
 
-    if os.path.isfile('./.instauto.save'):
-        client = ApiClient.initiate_from_file('./.instauto.save')
+    if os.path.isfile('./.instauto1.save'):
+        client = ApiClient.initiate_from_file('./.instauto1.save')
     else:
         client = ApiClient(username=os.environ.get("INSTAUTO_USER") or "hmr1973maia", password=os.environ.get("INSTAUTO_PASS") or "Mkonji321!!!")
         client.log_in()
-        client.save_to_disk('./.instauto.save')
+        client.save_to_disk('./.instauto1.save')
 
     post = ps.PostFeed(path='./cur_time.jpg',caption=text)
     resp = client.post_post(post, 80)
