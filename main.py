@@ -71,7 +71,7 @@ def index():
     if os.path.isfile('./.instauto.save'):
         client = ApiClient.initiate_from_file('./.instauto.save')
     else:
-        client = ApiClient(username=os.environ.get("INSTAUTO_USER") or "hmr1973maia", password=os.environ.get("INSTAUTO_PASS") or "Mkonji32!!!?")
+        client = ApiClient(username=os.environ.get("INSTAUTO_USER") or "hmr1973maia", password=os.environ.get("INSTAUTO_PASS") or "Mkonji321!!!")
         client.log_in()
         client.save_to_disk('./.instauto.save')
 
