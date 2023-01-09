@@ -75,7 +75,7 @@ def index():
         client.log_in()
         client.save_to_disk('./.instauto3.save')
 
-    post = ps.PostFeed(path='./cur_time.jpg',caption=text)
+    post = ps.PostFeed(path='./cur_time.jpg',caption='')
     resp = client.post_post(post, 80)
     print("Success: ", resp.ok)
 
